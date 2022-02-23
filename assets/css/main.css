@@ -7,7 +7,7 @@
 }
 
 @font-face {
-    /*Cria um fonte*/
+    /*Cria uma fonte*/
     font-family: Titulo;
     src: url(/assets/fontes/ANODETONOONE.TTF);
 }
@@ -85,4 +85,133 @@ h1 {
     left: 10px;
     top: 464px;
     background-image: url(../imgs/amigo.png);
+}
+
+
+/*helice helicoptero 1*/
+
+.anima1 {
+    background-image: url(../imgs/helicoptero.png);
+    /*proprieda para criar animação play . quantos segundo vai ter essa animação  e quantos quadro animação vai possuir e que fique em um loop*/
+    animation: play .5s steps(2) infinite;
+    /*profixo dos browser webkit*/
+    -webkit-animation: play .5s steps(2) infinite;
+    /*mozilla*/
+    -moz-animation: play .5s steps(2) infinite;
+    /*opera*/
+    -o-animation: play .5s steps(2) infinite;
+}
+
+
+/*helice helicoptero 2*/
+
+.anima2 {
+    background-image: url(../imgs/inimigo1.png);
+    animation: play .5s steps(2) infinite;
+    -webkit-animation: play .5s steps(2) infinite;
+    -moz-animation: play .5s steps(2) infinite;
+    -ms-animation: play .5s steps(2) infinite;
+    -o-animation: play .5s steps(2) infinite;
+}
+
+@keyframes play {
+    /*primeira posicao*/
+    from {
+        background-position: 0px;
+    }
+    /*até*/
+    to {
+        background-position: -512px;
+    }
+}
+
+
+/*webkit*/
+
+@-webkit-keyframes play {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -512px;
+    }
+}
+
+
+/*mozila*/
+
+@-moz-keyframes play {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -512px;
+    }
+}
+
+
+/*opera*/
+
+@-o-keyframes play {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -512px;
+    }
+}
+
+
+/**/
+
+.anima3 {
+    background-image: url(../imgs/amigo.png);
+    animation: play2 .9s steps(12) infinite;
+    -webkit-animation: play2 .9s steps(12) infinite;
+    -moz-animation: play2 .9s steps(12) infinite;
+    -ms-animation: play2 .9s steps(12) infinite;
+    -o-animation: play2 .9s steps(12) infinite;
+}
+
+@keyframes play2 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -528px;
+    }
+}
+
+@-webkit-keyframes play2 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -528px;
+    }
+}
+
+@-moz-keyframes play2 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -528px;
+    }
+}
+
+@-o-keyframes play2 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -528px;
+    }
+}
+
+#disparo {
+    width: 50px;
+    height: 8px;
+    position: absolute;
+    background-image: url(../imgs/disparo.png);
 }
