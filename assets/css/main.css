@@ -73,7 +73,7 @@ h1 {
     width: 165px;
     height: 70px;
     position: absolute;
-    left: 775px;
+    left: 795px;
     top: 447px;
     background-image: url(../imgs/inimigo2.png);
 }
@@ -85,6 +85,24 @@ h1 {
     left: 10px;
     top: 464px;
     background-image: url(../imgs/amigo.png);
+}
+
+h2 {
+    border: solid;
+    border-radius: 10px;
+    background-color: black;
+    margin-left: 5px;
+    font-family: Titulo;
+    font-size: 20px;
+    color: #FFF
+}
+
+#energia {
+    width: 140px;
+    height: 38px;
+    position: absolute;
+    left: 750px;
+    top: 7px;
 }
 
 
@@ -169,7 +187,6 @@ h1 {
     animation: play2 .9s steps(12) infinite;
     -webkit-animation: play2 .9s steps(12) infinite;
     -moz-animation: play2 .9s steps(12) infinite;
-    -ms-animation: play2 .9s steps(12) infinite;
     -o-animation: play2 .9s steps(12) infinite;
 }
 
@@ -209,9 +226,82 @@ h1 {
     }
 }
 
+.anima4 {
+    width: 44px;
+    height: 51px;
+    background-image: url(/assets/imgs/amigo_morte.png);
+    animation: play3 .5s steps(7) infinite;
+    -webkit-animation: play3 .5s steps(7) infinite;
+    -moz-animation: play3 .5s steps(7) infinite;
+    -ms-animation: play3 .5s steps(7) infinite;
+    -o-animation: play3 .5s steps(7) infinite;
+}
+
+@keyframes play3 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -308px;
+    }
+}
+
+@-webkit-keyframes play3 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -308px;
+    }
+}
+
+@-moz-keyframes play3 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -308px;
+    }
+}
+
+@-o-keyframes play3 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -308px;
+    }
+}
+
 #disparo {
     width: 50px;
     height: 8px;
     position: absolute;
     background-image: url(../imgs/disparo.png);
+}
+
+#explosao1 {
+    width: 15px;
+    height: 87px;
+    position: absolute;
+}
+
+#explosao2 {
+    width: 15px;
+    height: 87px;
+    position: absolute;
+}
+
+#explosao3 {
+    width: 44px;
+    height: 51px;
+    position: absolute;
+}
+
+#placar {
+    width: 450px;
+    height: 50px;
+    position: absolute;
+    left: 5px;
+    top: 590px;
 }
